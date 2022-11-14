@@ -4,6 +4,24 @@
     </head>
     <body>
         <h1>Code Blog</h1>
+        <h3>Assignment 4 - Node.js</h3>
+        <p>
+            This assignment wasn't terribly difficult. I was lucky and I implemented basically the same project
+            in C++ last week as part of a hobby project, so I already had a rough idea of how the server should 
+            work. The main resources I used to orient myself were the example code from class - which let me know
+            roughly which library functions would be useful in which places - and the lecture notes. I also had to
+            check the documentation on nodejs.org for a couple of things with the filesystem callback, but I didn't
+            run into anything terribly confusing.
+        </p>
+        <p>
+            One thing that I did that may have been less that ideal is I implemented the cache by treating the urls
+            as object field names and storing the file data as object fields with those names. This might be bad
+            if objects have any kind of field that should not be overwritten. If they exist, I don't think
+            they'd be accessible from the url bar due to being prefixed by a '/', but depending on the filtering
+            done by the 'http' library in Node, it might be possible that someone could construct a url that would
+            behave badly when used to index an object.
+        </p>
+        <p>11/07/2022</p>
         <h3>Assignment 3 - Javascript</h3>
         <p>11/07/2022</p>
         <p>
@@ -22,7 +40,6 @@
             all the information I needed on DOM manipulation. I have done a lot of Javascript programming before, so
             a lot of this was familiar to me, but it was interesting nonetheless.
         </p>
-        <h1>Code Blog</h1>
         <h3>Assignment 2 - CSS</h3>
         <p>10/24/2022</p>
         <p>
